@@ -7,6 +7,9 @@ Contract.make {
         method GET()
     }
     response {
+        headers {
+            contentType(applicationJson())
+        }
         status 200
         body(["Dawid", "Marcin"])
     }
